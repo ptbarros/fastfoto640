@@ -1,0 +1,2 @@
+# Epson FastFoto FF-640: let the logged-in user (and the plugdev group) use it.
+SUBSYSTEM=="usb", ATTRS{idVendor}=="04b8", ATTRS{idProduct}=="015f", MODE="0664", GROUP="plugdev", ENV{libsane_matched}="yes", TAG+="uaccess"
